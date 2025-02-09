@@ -1,0 +1,54 @@
+
+body {
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.video-player {
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .controls button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    .controls input[type="range"] {
+        flex-grow: 1;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+#seek-bar {
+    width: 100%;
+}
+
+#volume-bar {
+    width: 80px;
+}
